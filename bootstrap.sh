@@ -18,5 +18,6 @@ sudo mkdir -p /data/db
 sudo chmod 0777 /data/db
 
 # MONGODB RUN AS SERVICE
-sudo service mongod start --bind_ip=0.0.0.0
+sudo mv /home/vagrant/custom_mongod.conf /etc/mongod.conf
+sudo service mongod start
 
