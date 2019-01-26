@@ -21,3 +21,9 @@ sudo chmod 0777 /data/db
 sudo mv /home/vagrant/custom_mongod.conf /etc/mongod.conf
 sudo service mongod start
 
+# Install Apache2
+sudo apt install apache2 -y
+
+# Install PM2
+sudo npm i -g pm2
+
